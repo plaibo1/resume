@@ -9,6 +9,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    @media print {
+    .print {
+        display: none;
+    }
+}
+  </style>
+
+  <style>
     .mainGradient {
       background-size: cover;
       background:linear-gradient(-225deg, #4c3fff13 16%, #fa923015 100%,  #ffbac318 100%);
@@ -19,8 +27,8 @@
 
 <body>
 
-<div class="w-full h-screen mainGradient">
-  <div class="max-w-5xl mx-auto relative pt-[100px]">
+<div class="w-full mainGradient">
+  <div class="max-w-5xl mx-auto relative pt-[100px] pb-[60px]">
 
     <div class="flex mb-16">
       <h2 class="text-base font-semibold text-slate-400 w-[150px]">Details</h2>
@@ -31,10 +39,10 @@
         </div>
         <div class="mt-7">
           <h1 class="text-4xl font-bold text-slate-800 mb-4 flex">
-            Ilya Lyskov, Front-end Developer <img class="w-[35px] ml-3" src="./img/shake.png" alt="hello">
+            Ilya Lyskov, Front-end Developer
           </h1>
           <p class="text-xl">
-            <span class="block mb-2"> I want to develop products for the company, where I can grow.</span>
+            <span class="block mb-2">I want to develop products for the company, where I can grow.</span>
   
             <span class="block">Best way to contact me - <a href="https://t.me/playbo1" class="underline">Telegram</a></span>
             <span class="block">My Projects  - <a href="https://ilya-lyskov-portfolio.vercel.app/" class="underline">Portfolio</a></span>
@@ -46,10 +54,52 @@
     </div>
   
     <div class="flex mb-16">
-      <h2 class="text-base font-semibold text-slate-400 w-[150px]">Education</h2>
+      <h2 class="text-base font-semibold text-slate-400 min-w-[150px]">Projects</h2>
       <div>
-        <div class="text-2xl font-bold text-slate-800 mb-2">Don State Technical University, Rostov-on-Don Bachelor</div>
-        <div class="text-base text-slate-500">September 2018 – June 2022</div>
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-slate-800 mb-3 leading-6">Pagebuilder</h3>
+          <p>
+            Pet Project. This app helps to build a landing page without programer skills. <br>
+            I used react and redux. Then front-end was deployed on vercel. <br>
+            Also, I tried Back-end experience for the first time: <br>
+            I have acquired basic knowledge of how to work with node.js (express), postgreSQL, 
+            jwt-token for auth. <br>
+            Node.js (express) app and database of the project was deployed on Heroku.
+          </p>
+          <div class="text-sm mt-3 inline-flex items-start text-slate-500 underline">
+            <a href="https://pagebuilder-neon.vercel.app/" class=" hover:bg-indigo-500 hover:text-white mr-2">Link to the project</a>
+            <a href="https://github.com/plaibo1/pagebuilder" class="hover:bg-indigo-500 hover:text-white mr-2">Front-end code</a>
+            <a href="https://github.com/plaibo1/pagebuilderServer" class="hover:bg-indigo-500 hover:text-white">Back-end code</a>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-slate-800 mb-3 leading-6">Kanban</h3>
+          <p>
+            This Kanban app was created for developing my skills in TypeScript and Redux-Toolkit.
+            I got acquainted with the possibilities of react-beautiful-dnd. This library allowed me to work flexibly with drag & drop.
+            For the first time I worked with redux-toolkit and made it sync with localStorage by redux-persist.
+          </p>
+          <div class="text-sm mt-3 inline-flex items-start text-slate-500 underline">
+            <a href="https://pagebuilder-neon.vercel.app/" class=" hover:bg-indigo-500 hover:text-white mr-2">Link to the project</a>
+            <a href="https://github.com/plaibo1/pagebuilder" class="hover:bg-indigo-500 hover:text-white mr-2">Code</a>
+          </div>
+        </div>
+        <div class="mb-10">
+          <h3 class="text-2xl font-bold text-slate-800 mb-3 leading-6">Appy-Kit HTML Templates</h3>
+          <p>
+            Comercial project, in which a lot of effort and time was invested. 
+            <br>
+            I was a designer, marketer and developer all at once. 9 demo landing page templates 
+            for Apps, Saas and Agency presentation + blogging templates were created. 
+            AppyKit includes 28 component`s categories, all of this - rtl ready and has automatic darkmode (if OS darkmode on).
+            <br>
+            Also, I wrote a documentation and created a video tutorial for AppyKit.
+          </p>
+          <div class="text-sm mt-3 inline-flex items-start text-slate-500 underline">
+            <a href="https://pagebuilder-neon.vercel.app/" class=" hover:bg-indigo-500 hover:text-white mr-2">Link to the project</a>
+            <a href="https://github.com/plaibo1/pagebuilder" class="hover:bg-indigo-500 hover:text-white mr-2">Code</a>
+          </div>
+        </div>
       </div>
     </div>
   
@@ -58,16 +108,16 @@
       <div class="flex justify-between w-[300px] font-semibold text-slate-800">
         <ol>
           <li>HTML & CSS</li>
-          <li> Sass/Scss</li>
-          <li> JavaScript</li>
-          <li> React</li>
+          <li>Sass/Scss</li>
+          <li>JavaScript</li>
+          <li>React</li>
         </ol>
         <ol>
-          <li> Git</li>
-          <li> Redux</li>
-          <li> Gulp</li>
-          <li> Next.js</li>
-          <li> Node.js</li>
+          <li>Git</li>
+          <li>Redux</li>
+          <li>Gulp</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
         </ol>
       </div>
     </div>  
@@ -75,15 +125,27 @@
     <div class="flex mb-16">
       <h2 class="text-base font-semibold text-slate-400 w-[150px]">Education</h2>
       <div>
-        <div class="text-2xl font-bold text-slate-800 mb-2">Don State Technical University, Rostov-on-Don Bachelor</div>
+        <div class="text-2xl font-bold text-slate-800 mb-2 leading-6">Information systems and technologies, Bachelor, Don State Technical University, Rostov-on-Don</div>
         <div class="text-base text-slate-500">September 2018 – June 2022</div>
       </div>
     </div>
   
-    
+    <div class="print">
+      <button id="printIt" class="px-3 py-1 mb-2 rounded-md font-semibold bg-indigo-300 hover:bg-indigo-400">
+        save pdf
+      </button>
+      <div class="text-sm">* choose "save as PDF" in the printer`s options</div>
+    </div>
   
   </div>
 </div>
+
+<script>
+  const printIt = document.querySelector('#printIt')
+  printIt.addEventListener('click', function() {
+    window.print()
+  })
+</script>
 
 </body>
 </html>
